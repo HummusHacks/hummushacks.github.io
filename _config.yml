@@ -27,3 +27,12 @@ url: "https://hummushacks.tech"
 github_username:  HummusHacks
 
 theme: minima
+
+include: 
+  - _pages
+
+defaults: 
+  - scope:
+      path: "_pages"
+    values:
+      layout: "default"
