@@ -1,0 +1,126 @@
+---
+---
+{%- include head.html -%}
+
+  <body>
+
+    <header id="home-header" role="banner">
+      <div class="wrapper">
+        <nav id="home-nav" class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+              </svg>
+            </span>
+          </label>
+    
+          <div class="trigger">
+            {%- for page in site.data.nav-order -%}
+              {%- assign my_page = site.pages | where: "url", page.url | first -%}
+              {%- if my_page.title -%}
+                <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        </nav>
+      </div>
+    </header>
+      
+    <div class="home-content showcase">
+      <div class="wrapper">
+        <div id="logo-wrapper">
+          <a href="{{ "/" }}">
+            <img id="full-logo" class="logo" alt={{ site.title | escape }} src="/assets/logo-transparent.png">
+            <img id="no-text-no-chip" class="logo" src="/assets/logo-transparent-no-text-no-chip.png">
+            <img id="chip" class="logo" src="assets/chip.png">
+          </a>
+        </div>
+
+        <div id="site-descrip">
+          Join us on November 7 - 8, 2020 for the world’s first and only hummus themed hackathon!
+          <a id="learn-more" href="#about">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <main class="home-content" aria-label="Content">
+      <div class="wrapper">
+        <div id="about" class="home-about">
+          <h1>About</h1>
+          <p>
+          Hummus Hacks is a 24 hour hackathon based entirely around hummus. Like traditional hackathons, 
+          we provide an environment where passionate people come together to solve problems using technology. 
+          Your project can be anything you imagine as long as it is entirely created in the 24 hours of the event. 
+          We encourage you to learn something new and incorporate technology you’ve never used before into your project.
+          </p>
+          <p>
+          Unlike other hackathons, Hummus Hacks brings together people who have a passion for technology AND hummus. 
+          Join us for events like the Hummus Spa, Getting started with ML and the Hummus Dataset, or the ever-popular Make-your-own at Midnight!
+          Though not required, we recommend choosing a project that involves hummus. Check out our Hack Ideas for inspiration. 
+          We can’t wait to see what you’ll create!
+          </p>
+          <p>
+          There is no hummus without us. Together we can change the world, one hack at a time.
+          </p>
+        </div>
+
+        <div class="home-details">
+          <h2>Workshops</h2>
+          <p>
+            Developing VR/AR solutions for a growing hummus industry - Learn from our sponsors as they explain their 
+            use of VR/AR in the industry, and how you can use it in your project.
+          </p>
+          <p>
+            Getting started with the Hummus Dataset - Interested in using machine learning to solve problems in the 
+            world of hummus? Come learn how easy it is to get started with the data provided by our sponsors.
+          </p>
+
+
+          <h2>Mini Events</h2>
+          <p>
+            Hummus Creations Cook Off - You’ll have 10 minutes to cook your own Hummus Creation. 
+            Impress our judges with a new and unique dish. Good luck!
+          </p>
+          <p>
+            Hummus Spa - Kick back and relax with a hummus face mask.
+          </p>
+          <p>
+            Hummus Meme Contest - Share your best Hummus Memes and you could win a limited edition shirt!
+          </p>
+
+
+          <h2>Food</h2>
+          <div>
+            Lunch: Gyros
+          </div>
+          <div>
+            Dinner: Build a bowl. Choose your base, protein, veggies, and of course hummus to top it all off.
+          </div>
+          <div>
+            Make your own at Midnight: Choose from our massive selection of ingredients, throw it in a blender, and enjoy!
+          </div>
+          <div>
+            Breakfast: Breakfast wraps, fruit, and hummus filled donuts.
+          </div>
+          <div>
+            Lunch: Mediterranean Style Burgers and Veggie Burgers
+          </div>
+
+          <p>
+            Miss a meal because you were too busy hacking? No worries, join us in the GARBONZONE. We’ve got an endless 
+            supply of hummus, pita chips, veggies, and much more waiting for you!
+          </p>
+          <p>
+            Need a break from hummus? Of course not, that’s why you’re here!
+          </p>
+        </div>
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+  </body>
+</html>

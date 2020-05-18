@@ -1,0 +1,25 @@
+---
+layout: default
+title: Schedule
+permalink: /schedule/
+---
+<h1>Schedule</h1>
+
+{%- for day in site.data.event-schedule -%}
+<h2>{{ day.day }}</h2>
+<table>
+  {%- for time in day.times -%}
+  <tr>
+    <td class="td-time">
+      <div>{{ time.time }}</div>
+    </td>
+
+    <td class="td-event">
+      {%- for event in time.events  -%}
+      <div>{{ event }}</div>
+      {%- endfor -%}
+    </td>
+  </tr>
+  {%- endfor -%}
+</table>
+{%- endfor -%}

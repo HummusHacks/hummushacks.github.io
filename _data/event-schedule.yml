@@ -1,0 +1,76 @@
+- day: November 7
+  times:
+    - time: 10:00 am
+      events: 
+        - Check In Opens
+
+    - time: 11:00 am
+      events: 
+        - Opening Ceremony Begins
+
+    - time: 12:00 pm
+      events: 
+        - Opening Ceremony Ends
+        - Lunch
+        - Sponsor Tables
+
+    - time: 1:00 pm
+      events:
+        - Hacking Begins
+
+    - time: 2:00 pm
+      events:
+        - "Workshop: Developing VR/AR Solutions for a Growing Hummus Industry"
+
+    - time: 3:00 pm
+      events:
+        - "Workshop: Getting Started with ML and the Hummus Dataset"
+
+    - time: 4:00 pm
+      events:
+        - "Mini Event: Hummus Creations Cookoff"
+
+
+    - time: 7:00 pm
+      events:
+        - Dinner
+
+
+    - time: 10:00 pm
+      events:
+        - "Mini Event: Hummus Spa"
+
+- day: November 8
+  times:
+    - time: 12:00 am
+      events:
+        - Make your own at Midnight
+
+
+    - time: 2:00 am
+      events:
+        - "Mini Event: Hummus Meme Contest"
+
+
+    - time: 8:00 am
+      events:
+        - Breakfast
+
+
+    - time: 12:00 pm
+      events:
+        - Lunch
+
+    - time: 1:00 pm
+      events:
+        - Hacking Ends
+        - Judging Begins
+
+    - time: 2:00 pm
+      events:
+        - Judging Ends
+        - Closing Ceremony Begins
+
+    - time: 3:00 pm
+      events:
+        - Closing Ceremony Ends

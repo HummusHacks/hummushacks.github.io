@@ -1,0 +1,112 @@
+
+#home-header {
+    height: 6vh;
+    position: relative;
+    background-color: $brand-color;
+}
+#home-nav {
+    margin-top: 0px;
+    height: 6vh;
+}
+
+
+.showcase {
+    position: relative;
+    background-color: $brand-color;
+    text-align: center;
+    height: 90vh;
+    z-index: 1;
+}
+
+#logo-wrapper {
+    position: relative;
+    top: 10vh;
+    min-width: 400px;
+    width: 100%;
+}
+.logo {
+    position: absolute;
+    top: 0; left: 0;
+}
+
+#full-logo {
+    z-index: 99;
+    opacity: 0;
+    -webkit-animation: fadein 2s linear 2.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation: fadein 2s linear 2.5s;
+            animation-fill-mode: forwards;
+}
+
+#no-text-no-chip {
+    z-index: 50;
+}
+
+#chip {
+    z-index: 2;
+    top: -500px;
+    -webkit-animation: spindown 2.5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation: spindown 2.5s linear;
+            animation-fill-mode: forwards;
+}
+
+#site-descrip {
+    position: relative;
+    top: 50vh;
+    line-height: 10vh;
+    font-size: large;
+}
+
+#learn-more {
+    position: relative;
+    top: 5vh;
+    width: 100px;
+    padding: 15px;
+    margin: 0 auto;
+    color: $text-color;
+    text-decoration: none;
+    line-height: $base-line-height;
+    background-color: #7DCE82;
+}
+
+
+
+
+.home-content {
+    padding: $spacing-unit 0;
+}
+
+
+
+//Animations
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes spindown {
+    from { 
+        top: -500px;
+        transform: rotate(0deg);
+    }
+    to { 
+        top: 0px;
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spindown {
+    from { 
+        top: -500px;
+        -webkit-transform: rotate(0deg);
+    }
+    to { 
+        top: 0px;
+        -webkit-transform: rotate(360deg);
+    }
+}
