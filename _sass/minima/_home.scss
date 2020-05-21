@@ -1,5 +1,6 @@
 
 #home-header {
+    min-height: $spacing-unit * 1.865;
     height: 6vh;
     position: relative;
     background-color: $brand-color;
@@ -19,7 +20,7 @@
 
 #logo-wrapper {
     position: relative;
-    top: 10vh;
+    top: 5vh;
     min-width: 100px;
     width: 100%;
 }
@@ -47,14 +48,14 @@
 
 #site-descrip {
     position: relative;
-    top: 55vh;
+    top: 45vh;
     font-size: large;
 }
 
 #learn-more {
     display: block;
     position: relative;
-    top: 10vh;
+    top: 5vh;
     width: 100px;
     padding: 15px;
     margin: 0 auto;
