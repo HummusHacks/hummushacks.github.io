@@ -44,8 +44,8 @@
   }
 
   .page-link {
-    color: $text-color;
-    background-color: $background-color-grey;
+    color: $background-color;
+    background-color: $brand-color;
     text-decoration: none;
     padding: 8px;
     line-height: $base-line-height;
@@ -53,6 +53,11 @@
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 10px;
+    }
+
+    &:hover {
+      color: $brand-color;
+      background-color: $background-color-grey;
     }
   }
 
@@ -95,17 +100,15 @@
 
     input:checked ~ .trigger {
       display: block;
-      padding-bottom: 5px;
     }
 
     .page-link {
       display: block;
-      padding: 5px 10px;
+      padding: 10px 10px;
 
       &:not(:last-child) {
         margin-right: 0;
       }
-      // margin-left: 20px;
     }
   }
 }
@@ -128,7 +131,6 @@
 
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
-  color: $grey-color;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
 }
@@ -143,6 +145,11 @@
 .footer-col, .footer-col a {
   color: $background-color;
   text-decoration: none;
+}
+
+.footer-col a:hover {
+  color: $background-color-grey;
+  text-decoration: underline;
 }
 
 @include media-query($on-palm) {
