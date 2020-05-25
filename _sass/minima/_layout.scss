@@ -173,3 +173,63 @@
 .td-time {
   width: 15%
 }
+
+.td-meal {
+  width: 35%;
+}
+
+
+h2, h3 {
+  margin-top: 30px;
+}
+
+hr {
+  margin-top: 40px;
+}
+
+
+// Prize Page
+
+.prize-place {
+  display: inline-block;
+  width: 10%;
+}
+
+.prize-name {
+  font-size: x-large;
+}
+
+.prize-detail {
+  margin-left: 10.7%;
+  width: 75%;
+}
+
+
+// FAQ Page
+
+details, summary {
+  margin: 20px 0px;
+}
+
+details p {
+  margin-left: 25px;
+}
+
+
+// Sponsors Page
+
+.sponsor-logos {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+}
+
+.logo-column {
+  flex: 30%;
+  margin: 0 10px;
+}
+
+.logo-column img {
+  margin: 20px 0;
+  vertical-align: middle;
+}
