@@ -218,3 +218,18 @@ details p {
 
 // Sponsors Page
 
+.sponsor-logos {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+}
+
+.logo-column {
+  flex: 30%;
+  margin: 0 10px;
+}
+
+.logo-column img {
+  margin: 20px 0;
+  vertical-align: middle;
+}
