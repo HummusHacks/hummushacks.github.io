@@ -33,7 +33,7 @@
 }
 
 #full-logo {
-    z-index: 99;
+    z-index: 60;
 }
 
 #no-text-no-chip {
@@ -41,7 +41,7 @@
 }
 
 #chip {
-    z-index: 2;
+    z-index: 40;
     top: -500px;
     -webkit-animation: spindown 2.5s linear;
     -webkit-animation-fill-mode: forwards;
