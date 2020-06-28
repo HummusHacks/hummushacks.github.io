@@ -55,16 +55,17 @@
 }
 
 #learn-more {
-    display: block;
     position: relative;
     top: 35px;
-    width: 100px;
     padding: 15px;
     margin: 0 auto;
     color: $text-color;
     text-decoration: none;
     line-height: $base-line-height;
     background-color: #7DCE82;
+    border: none;
+    font-size: $base-font-size;
+    font-family: $base-font-family;
 
     &:hover {
         background-color: darken($color: #7DCE82, $amount: 10%);

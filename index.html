@@ -41,9 +41,9 @@ title: Home
 
         <div id="site-descrip">
           Join us on November 7 - 8, 2020 for the world’s first and only hummus themed hackathon!
-          <a id="learn-more" href="#about">
+          <button id="learn-more">
             Learn More
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -130,5 +130,11 @@ title: Home
     </main>
 
     {%- include footer.html -%}
+    <script>
+      const learnMore = document.getElementById('learn-more');
+      learnMore.addEventListener('click', () => {
+        document.getElementById("about").scrollIntoView({behavior: 'smooth'});
+      });
+    </script>
   </body>
 </html>
