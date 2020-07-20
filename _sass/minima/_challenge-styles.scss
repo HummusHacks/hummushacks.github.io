@@ -1,11 +1,24 @@
 .challenge-iframe {
     width: 100%; 
-    height: 1500px; 
     border: none;
 }
 
-@include media-query(550px) {
-    .challenge-iframe {
-        height: 1670px;
+#pathfinder-iframe {
+    height: 1500px; 
+}
+#swift-iframe {
+    height: 2300px;
+}
+@include media-query(700px) {
+    #swift-iframe {
+        height: 2700px;
+    }
+}
+@include media-query(565px) {
+    #pathfinder-iframe {
+        height: 1680px;
+    }
+    #swift-iframe {
+        height: 3100px;
     }
 }
