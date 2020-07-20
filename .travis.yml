@@ -13,6 +13,7 @@ env:
 
 script: 
   - sh pathfinder/setup.sh
+  - sh swift/setup.sh
   - git commit -m "Add cloned challenges"
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site --disable-external
