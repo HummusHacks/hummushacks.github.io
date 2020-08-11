@@ -1,0 +1,22 @@
+<script>
+    const ifr = document.getElementById("challenge-iframe");
+
+    function resizeIframe(event) {
+        try {
+            ifr.style.height = (ifr.contentWindow.document.body.scrollHeight + 20)+'px';
+        } catch {
+            return;
+        }
+    }
+
+    const observerOptions = {
+        childList: true,
+        attributes: true,
+        subtree: true 
+    }
+    const observer = new MutationObserver(resizeIframe);
+    observer.observe(ifr.contentWindow.document, observerOptions);
+
+    window.addEventListener('load', resizeIframe);
+    window.addEventListener('resize', resizeIframe);
+</script>
