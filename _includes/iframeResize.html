@@ -1,5 +1,8 @@
 <script>
     const ifr = document.getElementById("challenge-iframe");
+    window.addEventListener('load', setup);
+    window.addEventListener('load', resizeIframe);
+    window.addEventListener('resize', resizeIframe);
 
     function resizeIframe(event) {
         try {
@@ -9,14 +12,13 @@
         }
     }
 
-    const observerOptions = {
-        childList: true,
-        attributes: true,
-        subtree: true 
+    function setup(event) {
+        const observerOptions = {
+            childList: true,
+            attributes: true,
+            subtree: true 
+        }
+        const observer = new MutationObserver(resizeIframe);
+        observer.observe(ifr.contentWindow.document, observerOptions);
     }
-    const observer = new MutationObserver(resizeIframe);
-    observer.observe(ifr.contentWindow.document, observerOptions);
-
-    window.addEventListener('load', resizeIframe);
-    window.addEventListener('resize', resizeIframe);
 </script>
